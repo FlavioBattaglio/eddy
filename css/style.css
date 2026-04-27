@@ -1,0 +1,264 @@
+  .dropdown-menu{
+    --bs-dropdown-link-hover-bg:rgba(233, 231, 231, 0.315);
+    }
+    :root{
+        --colore-principale: #444e58;
+    }
+    body{font-family: "Montserrat", sans-serif;}
+ 
+    /**/
+    .btn[aria-expanded="true"] .mk-svg-icon {
+      transform: rotate(180deg);
+    }
+
+    
+    .btn[aria-expanded="true"] svg {
+      transform: rotate(180deg);
+    }
+    /**/
+    
+
+
+
+    .navbar-toggler{
+      
+        background-color:#fff;
+    }
+    h1{
+      font-size: calc(0.90rem + 1.5vw) !important;
+      margin-bottom: 0 !important;
+    }
+    
+    /*effetto fade */
+    .ef-fade {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 5s ease, transform 0.5s ease; /* velocità*/
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .ef-fade.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+
+
+
+
+
+     /*effette carosello*/
+        .custom-carousel {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .carousel-item img {
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 5px;
+            padding: 15px;
+        }
+        
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 50px;
+            height: 50px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0 15px;
+        }
+        
+        .carousel-indicators button {
+            width: 12px;
+            height: 24px;
+            border-radius: 100%;
+            margin: 0 5px;
+        }
+        .carousel-item {
+         transition: transform 1.5s ease-in-out; /* Default is 0.6s */
+          }
+
+            /*tipo di bottoni carosello */
+       
+                .carousel-indicators [data-bs-target] {
+                width: 30px;      /* lunghezza barra */
+                height: 6px;      /* spessore */
+                border-radius: 3px;
+                background-color: #ccc;
+                margin: 0 5px;
+                 bottom: -30px;
+              }
+
+            .carousel-indicators .active {
+              background-color: #007bff; /* colore attivo */
+              opacity: 1;
+            }
+     /*Fine effetto carosello*/
+
+      /*Inizio striscia immagini*/
+   .clienti-section {
+           /*background: linear-gradient(135deg, #8f8ee9 0%, #3939ca 100%);*/
+            padding: 4rem 0;
+        }
+        
+        .clienti-title {
+            color: #2c3e50;
+            font-weight: 700;
+            
+            text-align: center;
+        }
+        
+        /* CONTAINER CHE CONTIENE LO SLIDER */
+        .slider-wrapper {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            padding: 1rem 0;
+            background-color:#0a06cf2d;
+        }
+        
+        /* TRACK CHE SI MUOVE */
+        .image-track {
+            display: flex;
+            width: max-content;
+            animation: scroll-logos 25s linear infinite;
+        }
+        
+        /* PAUSA SU HOVER */
+        .image-track:hover {
+            animation-play-state: paused;
+        }
+        
+        /* STILE IMMAGINI */
+        .client-logo {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            margin: 0 2rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .client-logo:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        /* ANIMAZIONE CON VALORI FISSI */
+        @keyframes scroll-logos {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                /* Calcola: (larghezza immagine + margine) * numero immagini duplicate */
+                transform: translateX(calc(-120px * 5 - 4rem * 10));
+            }
+        }
+        
+        /* SFUMATURE AI BORDI */
+        .slider-wrapper::before,
+        .slider-wrapper::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 150px;
+            height: 100%;
+            z-index: 10;
+            pointer-events: none;
+        }
+        
+        .slider-wrapper::before {
+            left: 0;
+            background: linear-gradient(to right, #9dbef057, transparent);
+        }
+        
+        .slider-wrapper::after {
+            right: 0;
+            background: linear-gradient(to left, #9dbef067, transparent);
+        }
+        
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .client-logo {
+                width: 100px;
+                height: 100px;
+                margin: 0 1.5rem;
+            }
+            
+            @keyframes scroll-logos {
+                100% {
+                    transform: translateX(calc(-100px * 5 - 3rem * 10));
+                }
+            }
+        }
+  
+    
+        /*Effetto flip card*/
+        
+        .flip-card {
+              perspective: 1000px;
+              width: 100%;
+              height: 420px;
+            }
+
+        .flip-card-inner {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          transition: transform 0.6s;
+          transform-style: preserve-3d;
+        }
+
+        /* SOLO quando clicco */
+        .flip-card.flipped .flip-card-inner {
+          transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden;
+        }
+
+        .flip-card-back {
+          transform: rotateY(180deg);
+        }
+        /*Fine effetto flip*/
+        /* letter spacing */
+        .ls-1 { letter-spacing: 1px; }
+        .ls-2 { letter-spacing: 2px; }
+        .ls-3 { letter-spacing: 3px; }
+
+        .colore-testo-principale{
+            color: var(--colore-principale);
+        }
+
+    .table-pers {
+    --bs-table-color: #fff;
+
+    /*--bs-table-bg: #212529;*/
+    --bs-table-bg: var(--colore-principale);
+    --bs-table-border-color: #4d5154;
+    --bs-table-striped-bg: #2c3034;
+    --bs-table-striped-color: #fff;
+    --bs-table-active-bg: #373b3e;
+    --bs-table-active-color: #fff;
+    --bs-table-hover-bg: #323539;
+    --bs-table-hover-color: #fff;
+    color: var(--bs-table-color);
+    border-color: var(--bs-table-border-color)
+}

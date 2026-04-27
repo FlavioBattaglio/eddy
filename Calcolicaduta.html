@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo sito</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"   >
+    <link rel="stylesheet" href="css/style.css">
+   
+    <!-- Font montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div id="navbar-container">
+</div>
+ 
+<div class="d-flex  align-items-center" style="   height: 100px; width: 100%; background-image: url(img/ok.jpg); background-size: cover; opacity: 0.8;background-position: center; ">
+    <div class=" container text-white">
+     <div class="fs-3 ls-2">CALCOLO CADUTA TENSIONE</div>
+    </div>  
+</div>
+ 
+ 
+
+  
+    <div class="container d-flex  justify-content-center px-0"> 
+
+      
+      <table class="table table-pers table-hover my-5 "  >
+          <form onsubmit="return false;" name="form1" id="form1"> 
+              <thead>
+                <tr>
+                  <th scope="col-1" class="text-center">Compila tutti i campi</th>
+                </tr>
+              </thead>
+
+            <tbody>
+
+              <tr>
+                <td>
+                  <select class="form-select" name="corrente" id="corrente" class="corretto">
+                    <option value="0" class="note">Seleziona tipo Corrente  alimentazione</option>
+                    <option value="1">Corrente continua</option>
+                    <option value="2">Corrente monofase alternata</option>
+                    <option value="3">Corrente trifase alternata</option>
+                  </select>
+
+ 
+
+
+
+
+
+
+                </td>
+              </tr>
+              
+              <tr>
+                <th>
+                  <div style="display:flex; align-items:center; gap:5px;">
+                  <div style="width:170px;">Tensione</div>
+                  <input type="text"   name="tensione" id="tensione" style="width:150px;" oninput="validaNumero(this)" >
+                  <span>V</span>
+                  </div>
+
+                 </th>
+              
+              </tr>
+
+              <tr>
+                <th scope="row">
+
+                 <div style="display:flex; align-items:center; gap:5px;">
+                  <div style="width:170px;">Potenza</div>
+                  <input type="text" name="potenza" id="potenza" style="width:150px;" oninput="validaNumero(this)">
+                  <span>W</span>
+                  </div>
+                 
+                </th>
+
+              </tr>
+ 
+              <tr>
+                <th scope="row">
+                  <div style="display:flex; align-items:center; gap:5px;">
+                  <div style="width:170px;">Sezione</div>
+                  <input type="text" name="sezione" id="sezione" style="width:150px;" oninput="validaNumero(this)">
+                  <span>V</span>
+                  </div>
+                </th>
+               
+              </tr>
+
+               <tr>
+              
+                  <th scope="row">
+                  <div style="display:flex; align-items:center; gap:5px;">
+                  <div style="width:170px;">Lunghezza</div>
+                  <input type="text" name="lunghezza" id="lunghezza" style="width:150px;" oninput="validaNumero(this)">
+                  <span>Mt</span>
+                  </div>
+                  </th>
+
+
+
+              </tr>
+                
+              
+              <th class="d-flex justify-content-between">
+               <input type="reset" class="btn btn-danger border" class="daticalcolo" value="Reset">
+                <input type="submit" class="btn btn-secondary border" onclick="verifica_input() ;" name="Submit" value="Calcola">
+             
+              
+               
+               
+              </th>
+              <tr >
+              
+                  <th scope="row" class="pt-4">
+                  <div style="display:flex; align-items:center; gap:5px;">
+                  <div style="width:100px;">Caduta di tensione</div>
+                  <input type="text" name="risultato_cad_tensione" id="risultato_cad_tensione" style="width:150px;" readonly>
+                  <button class="btn btn-success" onclick="copiaTesto(`risultato_cad_tensione`)">Copia</button>
+                  </div>
+                  </th>
+           
+              
+              
+              </tr>
+
+
+                  <tr>    
+                  <th scope="row" class="pt-4">
+                  <div style="display:flex; align-items:center; gap:5px;">
+                  <div style="width:100px;">Caduta di tensione %</div>
+                  <input type="text" name="risultato_cad_tensione_perc" id="risultato_cad_tensione_perc" style="width:150px;" readonly>
+                  <button class="btn btn-success" onclick="copiaTesto(`risultato_cad_tensione_perc`)">Copia</button>
+                  </div>
+                  </th>
+                </tr>
+            </tbody>
+      </table>
+       
+        
+          
+        </div>
+      </form>
+
+ 
+
+</div>
+<!--Caricamento footer-->
+<div id="footer-container"></div>
+<style>
+
+.table{
+  width: auto!important;
+}
+
+</style>
+<script src="js/javascript.js"  ></script>
+<script src="js/calcolicaduta.js"  ></script>
+<script src="js/bootstrap.bundle.min.js"  ></script>
+
+</body>

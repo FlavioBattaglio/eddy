@@ -1,0 +1,187 @@
+
+ <!-- Inizio navbar cell-->
+  <style>
+    .btn{
+      --bs-btn-padding-y:0px;
+    }
+  </style>
+<nav class="navbar navbar-dark d-block d-lg-none   " style="background-color: var(#fff)">
+ <div class="container-fluid justify-content-between "> 
+    <div class="col-2 d-flex"></div> 
+    <div class="col-8 d-flex justify-content-center">    <img src="img/gelogo.webp" class="align-self-center" alt="triangle with all three sides equal" style="width: 150px; height: 75px;">  </div>
+
+    <div class="col-2 d-flex  ">
+
+    <button class="navbar-toggler menu-toggle mt-1 ps-2   collapsed" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarToggleExternalContent" 
+            aria-controls="navbarToggleExternalContent" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+      <span>
+        <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 40" width="35" height="60" fill="none" stroke="#444e58" stroke-width="2">
+          <path class="line line1" d="M0 10h30"></path>
+          <path class="line line2" d="M0 20h30"></path>
+          <path class="line line3" d="M0 30h30"></path>
+        </svg>         
+      </span>
+    </button>
+
+    </div>
+  </div>
+
+
+</nav>
+<!-- inizio Elementi navbar cellulare -->
+ <div class="collapse  d-lg-none" id="navbarToggleExternalContent" data-bs-theme="dark" style="color:whitesmoke;">
+
+  <div  style="background-color: var(--colore-principale);">
+
+    
+
+    <a class="nav-link border-bottom" href="/index.html" style="padding:4px 12px 4px 12px ; border-color:#ffffff33  !important;">HOME</a>
+    
+ 
+    <li class="nav-item  border-bottom   list-unstyled" style=" border-color:#ffffff33  !important;" >
+
+    <div class="d-flex justify-content-between align-items-center btn "  data-bs-toggle="collapse" style="padding:4px 12px 4px 12px ;" data-bs-target="#submenu-azienda"aria-expanded="false">
+      <a class="nav-link" href="#">AZIENDA</a>
+
+      <button class="btn collapsed rotate-btn   " data-bs-toggle="collapse" data-bs-target="#submenu-azienda"aria-expanded="false"  >
+          <svg class="mk-svg-icon" fill="currentColor" data-name="mk-moon-arrow-down" style="height:16px; width:16px; color:#fff; transition: transform 0.3s;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+           <path d="M512 192l-96-96-160 160-160-160-96 96 256 255.999z"></path>
+          </svg>
+      </button>
+    </div>
+    <ul class="collapse list-unstyled mb-2 ps-3" id="submenu-azienda">
+      <li><a class="nav-link" href="/Chisiamo.html">Chi siamo</a></li>
+      <li><a class="nav-link" href="/Diconodinoi.html">Dicono di noi</a></li>
+      <li><a class="nav-link" href="/Partnership.html">Partnership</a></li>
+    </ul>
+    </li>
+ 
+ 
+    <li class="nav-item  border-bottom   list-unstyled" style=" border-color:#ffffff33  !important;" >
+
+    <div class="d-flex justify-content-between align-items-center btn " data-bs-toggle="collapse" data-bs-target="#submenu-servizi"aria-expanded="false" style="padding:4px 12px 4px 12px ;">
+
+    <a class="nav-link" href="#">SERVIZI</a>
+      <button class="btn  collapsed rotate-btn  " data-bs-toggle="collapse" data-bs-target="#submenu-servizi"aria-expanded="false" style=" font-size: var(--bs-nav-link-font-size)">
+          <svg class="mk-svg-icon" fill="currentColor" data-name="mk-moon-arrow-down" style="height:16px; width:16px; color:#fff; transition: transform 0.3s;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M512 192l-96-96-160 160-160-160-96 96 256 255.999z"></path>
+          </svg>
+      </button>
+    </div>
+    <ul class="collapse list-unstyled  mb-2 ps-3" id="submenu-servizi">
+      <li><a class="nav-link" href="InstallazioneImpianti.html">Installazione Impianti</a></li>
+       <li><a class="nav-link" href="ManutenzioneImpianti.html">Manutezioni Impianti</a></li>
+       <li><a class="nav-link" href="ProgettazioneIngegneristica.html">Progettazione Ingegneristica</a></li>
+    </ul>
+    </li>
+
+  <a class="nav-link border-bottom" href="/#settori" style="padding:4px 12px 4px 12px ; border-color:#ffffff33  !important;">SETTORI</a>
+  <a class="nav-link border-bottom" href="/contattaci.html" style="padding:4px 12px 4px 12px ; border-color:#ffffff33  !important;">CONTATTI</a>
+   <a class="nav-link border-bottom" href="/Lavoraconoi.html" style="padding:4px 12px 4px 12px ; border-color:#ffffff33  !important;">LAVORA CON NOI</a>
+  
+  
+  
+    <li class="nav-item  border-bottom   list-unstyled" style=" border-color:#ffffff33  !important;" >
+
+    <div class="d-flex justify-content-between align-items-center btn " data-bs-toggle="collapse" data-bs-target="#submenu-calcoli"aria-expanded="false" style="padding:4px 12px 4px 12px ;">
+
+    <a class="nav-link" href="#">CALCOLI ELETTRICI</a>
+      <button class="btn  collapsed rotate-btn  " data-bs-toggle="collapse" data-bs-target="#submenu-calcoli"aria-expanded="false" style=" font-size: var(--bs-nav-link-font-size)">
+          <svg class="mk-svg-icon" fill="currentColor" data-name="mk-moon-arrow-down" style="height:16px; width:16px; color:#fff; transition: transform 0.3s;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M512 192l-96-96-160 160-160-160-96 96 256 255.999z"></path>
+          </svg>
+      </button>
+    </div>
+    <ul class="collapse list-unstyled  mb-2 ps-3" id="submenu-calcoli">
+      <li><a class="nav-link" href="Calcolisezione.html">Sezione Cavi</a></li>
+       <li><a class="nav-link" href="Calcolicaduta.html">Caduta Tensione</a></li>
+ 
+    </ul>
+    </li>
+
+
+  </div>
+
+
+</div>
+ 
+
+ <!-- Fine navbar cellulari-->
+
+
+ <!-- Inizio navbar tablet/pc -->
+ 
+ <div class="container-fluid justify-content-between py-2  d-none d-lg-block">  
+    <div class="col-12 d-flex justify-content-center ">    <img src="img/gelogo.webp" class="align-self-center" alt="triangle with all three sides equal" style="width: 300px; height: 150px; ">   </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid py-2  d-none d-lg-block" style="background-color: var(--colore-principale);">
+
+  <div class="row" style=" font-size: 13px; color: #fff;"> 
+    <div class="col ">  </div>
+    <div class="col px-0">
+       <a class="text-white text-decoration-none" href="/index.html"> HOME</a>
+     </div>
+    <div class="col px-0">       
+        <div class="dropdown">
+          <div class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            AZIENDA
+          </div>
+          <ul class="dropdown-menu " style="background-color: var(--colore-principale);">
+            <li><a class="dropdown-item text-white" href="/Chisiamo.html">Chi Siamo</a></li>
+            <li><a class="dropdown-item text-white" href="/Diconodinoi.html">Dicono di Noi</a></li>
+            <li><a class="dropdown-item text-white" href="/Partnership.html">Partnership</a></li>
+          </ul>
+       
+      </div>
+    </div>
+   
+    <div class="col px-0"> 
+
+      <div class="dropdown">
+        <div class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          SERVIZI
+        </div>
+        <ul class="dropdown-menu " style="background-color: var(--colore-principale);">
+         <li><a class="dropdown-item text-white" href="InstallazioneImpianti.html">Installazione Impianti</a></li>
+         <li><a class="dropdown-item text-white" href="ManutenzioneImpianti.html">Manutezioni Impianti</a></li>
+         <li><a class="dropdown-item text-white" href="ProgettazioneIngegneristica.html">Progettazione Ingegneristica</a></li>
+        </ul>
+      </div> 
+    </div>
+
+    <div class="col px-0"  > <a href="/#settori" class="text-white" style=" text-decoration: none;">SETTORI </a></div>
+    <div class="col px-0"> <a href="/contattaci.html" class="text-white" style=" text-decoration: none;"> CONTATTI</a> </div>
+    <div class="col px-0 text-nowrap "><a href="/Lavoraconoi.html" class="text-white" style=" text-decoration: none;">LAVORA CON NOI </a> </div> 
+
+
+    <div class="col ps-5 pe-0 text-nowrap">
+         <div class="dropdown">
+        <div class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          CALCOLI ELETTRICI
+        </div>
+        <ul class="dropdown-menu " style="background-color: var(--colore-principale);">
+         <li><a class="dropdown-item text-white" href="Calcolisezione.html">Sezione Cavi elettrici</a></li>
+         <li><a class="dropdown-item text-white" href="Calcolicaduta.html">Caduta di tensione</a></li>
+         </ul>
+      </div> 
+
+    </div>
+    <div class="col ">  </div>
+  </div>
+
+   
+
+    
+</div>
+  
+ 
+<!--fine navbar tablet->pc -->
+ 

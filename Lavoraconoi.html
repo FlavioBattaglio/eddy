@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo sito</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"   >
+    <link rel="stylesheet" href="css/style.css">
+   
+    <!-- Font montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div id="navbar-container">
+</div>
+ 
+<div class="d-flex  align-items-center" style="   height: 100px; width: 100%; background-image: url(img/ok.jpg); background-size: cover; opacity: 0.8;background-position: center; ">
+    <div class=" container text-white">
+     <div class="fs-3 ls-2">LAVORA CON NOI</div>
+    </div>  
+</div>
+ 
+<div class="container">
+ 
+
+
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8">
+
+      <!-- Titolo -->
+      <h2 class="text-center mb-3">Inviaci la tua candidatura!</h2>
+
+      <!-- Divider -->
+      <hr class="mb-4">
+
+      <!-- FORM -->
+      <form method="post" enctype="multipart/form-data">
+
+        <!-- Nome -->
+        <div class="mb-3">
+          <input type="text" class="form-control" name="name" placeholder="Nome*" required>
+        </div>
+
+        <!-- Cognome -->
+        <div class="mb-3">
+          <input type="text" class="form-control" name="surname" placeholder="Cognome*" required>
+        </div>
+
+        <!-- Email -->
+        <div class="mb-3">
+          <input type="email" class="form-control" name="email" placeholder="E-mail*" required>
+        </div>
+
+        <!-- Messaggio -->
+        <div class="mb-3">
+          <textarea class="form-control" name="message" rows="4" placeholder="Parlaci di te*" required></textarea>
+        </div>
+
+        <!-- Testo upload -->
+        <div class="mb-2">
+          <span class="small">Invia CV * (.DOC, .DOCX, .PDF - max. 2Mb)</span>
+        </div>
+
+        <!-- Upload file -->
+        <div class="mb-3">
+          <input type="file" class="form-control" name="cv" accept=".doc,.docx,.pdf" required>
+        </div>
+
+        <!-- GDPR -->
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="gdpr" required>
+          <label class="form-check-label small" for="gdpr">
+            Normativa privacy GDPR: Acconsento al trattamento dei miei dati personali in base alla
+            <a href="https://dafare/privacy-policy/" target="_blank">
+              Policy Privacy
+            </a>
+          </label>
+        </div>
+
+        <!-- Submit -->
+        <div class="text-center">
+          <button type="button" class="btn btn-primary py-2" style="background-color:var(--colore-principale); border-color:white;">INVIA</button>
+           
+        </div>
+
+      </form>
+
+      
+  </div>
+</div>
+
+   <!----> 
+</div>
+</div>
+<!--Caricamento footer-->
+<div id="footer-container"></div>
+
+<script src="js/javascript.js"  ></script>
+<script src="js/bootstrap.bundle.min.js"  ></script>
+
+</body>
